@@ -164,5 +164,75 @@ body {
         }
       }
     }
+    .footer {
+      text-align: center;
+      color: #e0e0e0;
+      @media (max-width: 992px) {
+        display: none;
+      }
+      .top-footer {
+        background-color: #2c3742;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+        .contacts {
+          padding: 20px 20vw;
+          display: flex;
+          justify-content: space-evenly;
+          gap: 70px;
+          .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .title {
+              font-size: 16px;
+              font-weight: bold;
+              border-left: 1px solid #eeeeee;
+              padding-left: 10px;
+              margin-bottom: 10px;
+            }
+            .item {
+              font-size: 12px;
+              padding-left: 10px;
+            }
+          }
+        }
+        .descriptions {
+          .company-description {
+            font-size: 12px;
+          }
+        }
+      }
+      .bottom-footer {
+        display: flex;
+        flex-direction: column;
+        background-color: #191e29;
+        padding: 10px 0;
+        .policies {
+          padding: 0 15vw;
+          @media (max-width: 1400px) {
+            padding: 0 10vw;
+          }
+          @media (max-width: 1300px) {
+            padding: 0 3vw;
+          }
+          font-size: 12px;
+          display: flex;
+          justify-content: space-evenly;
+          .policy {
+            border-right: 1px solid white;
+            border-left: 1px solid white;
+            padding: 0 20px;
+            @media (max-width: 1300px) {
+              padding: 0 15px;
+            }
+          }
+        }
+        .secure-number {
+          font-size: 14px;
+          padding: 20px 0;
+        }
+      }
+    }
   }
 }
