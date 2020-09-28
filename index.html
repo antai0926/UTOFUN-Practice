@@ -14,10 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="my-container">
       <nav class="navbar navbar-dark fixed-top navbar-expand-sm">
         <a class="navbar-brand" href="#">
           <img src="./img/logo-light-blue.png" alt="logo" loading="lazy" />
@@ -64,7 +64,28 @@
           </ul>
         </div>
       </nav>
-
+      <div class="content">
+        <div class="banner">
+          <img
+            src="./img//buildings-back-ground.jpg"
+            class="img-fluid"
+            alt="banner image"
+          />
+          <div class="banner-text">
+            <h1>社區指南</h1>
+            <p>請選擇至少一個區域</p>
+            <div class="select-areas">
+              <div class="select-area">曼哈頓</div>
+              <div class="select-area">布魯克林</div>
+              <div class="select-area">皇后區</div>
+              <div class="select-area">納蘇郡</div>
+            </div>
+          </div>
+        </div>
+        <div class="neighborhoods">
+          <div class="card-container" id="card-container"></div>
+        </div>
+      </div>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -81,5 +102,7 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

@@ -1,0 +1,168 @@
+body {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.my-container {
+  .navbar {
+    display: flex;
+    background-color: #222;
+    padding-left: 15%;
+    @media (min-width: 576px) and (max-width: 1075px) {
+      flex-direction: column;
+      padding-left: 0;
+    }
+    @media (max-width: 900px) {
+      padding-left: 0%;
+    }
+    li {
+      &.nav-item {
+        padding: 10px 8px;
+        @media (max-width: 1075px) {
+          padding: 5px 3px;
+        }
+        @media (max-width: 645px) {
+          padding: 5px 1px;
+        }
+        @media (max-width: 585px) {
+          padding: 5px 0px;
+        }
+      }
+    }
+    .navbar-brand {
+      img {
+        height: 50px;
+
+        @media (max-width: 1075px) {
+          height: 35px;
+        }
+      }
+    }
+    button.navbar-toggler {
+      background-color: #00c2ff;
+      border-color: #222;
+      padding: 7px;
+      .icon-bar {
+        background-color: white;
+        display: block;
+        color: white;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+      }
+      .icon-bar + .icon-bar {
+        margin-top: 4px;
+      }
+    }
+    .navbar-collapse {
+      padding-left: 25%;
+      @media (max-width: 1350px) {
+        padding-left: 5%;
+      }
+      @media (max-width: 900px) {
+        padding-left: 0%;
+      }
+      a {
+        color: white;
+        font-size: 16px;
+        @media (max-width: 625px) {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .content {
+    margin-top: 76px;
+    @media (max-width: 576px) {
+      margin-top: 61px;
+    }
+
+    .banner {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .banner-text {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 2px 2px 7px #222;
+        .select-areas {
+          display: flex;
+          gap: 0 20px;
+          .select-area {
+            background-color: rgb(20, 198, 255);
+            border-radius: 16px;
+            padding: 4px 10px;
+            cursor: pointer;
+            &:hover {
+              background-color: rgb(59, 206, 255);
+            }
+          }
+        }
+      }
+    }
+
+    .neighborhoods {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      .card-container {
+        padding: 25px 0;
+        display: flex;
+        flex-wrap: wrap;
+        @media (min-width: 768px) {
+          width: 100%;
+        }
+        @media (min-width: 992px) {
+          width: 970px;
+        }
+        @media (min-width: 1200px) {
+          width: 1170px;
+        }
+        .neighborhoodCard {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          width: 33.3%;
+          position: relative;
+          @media (max-width: 992px) {
+            width: 100%;
+          }
+          padding: 15px;
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 350px;
+            @media (max-width: 992px) {
+              height: 300px;
+            }
+            @media (max-width: 768px) {
+              height: 200px;
+            }
+          }
+          .neighborhood-description {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            text-shadow: 2px 2px 7px #222;
+            .title-cn {
+              font-size: 25px;
+              font-weight: bold;
+            }
+            .title-en {
+              font-size: 18px;
+            }
+            .description {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
